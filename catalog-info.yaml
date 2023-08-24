@@ -1,0 +1,15 @@
+apiVersion: backstage.io/v1alpha1
+kind: Location
+metadata:
+  name: market-place-example-all
+  description: A collection of all market-place example entities and templates
+spec:
+  targets:
+    - ./market-place-example/domains.yaml
+    - ./market-place-example/groups.yaml
+    - ./market-place-example/systems.yaml
+    - ./market-place-example/users.yaml
+    - https://github.com/Zenika/backstage-demo-marketplace-dataset-inventory/blob/main/catalog-info.yaml
+    - https://github.com/Zenika/backstage-demo-marketplace-dataset-payment/blob/main/catalog-info.yaml
+    - https://github.com/Zenika/backstage-demo-marketplace-dataset-messaging/blob/main/catalog-info.yaml
+    - https://github.com/Zenika/backstage-demo-marketplace-dataset-vendor/blob/main/catalog-info.yaml
